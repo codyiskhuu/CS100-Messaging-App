@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.starw.chatapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"> </uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/void_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Users" />
+        <activity android:name=".Chat" />
+        <activity android:name=".UserEdit" />
+        <activity android:name=".AccountDetails" />
+        <activity android:name=".ChangeProfileImage" />
+        <activity android:name=".NewSelectUser" />
+    </application>
+
+</manifest>
